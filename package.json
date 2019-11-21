@@ -5,13 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run start-server& npm run start-client&",
-    "start-server": "node index.js",
-    "start-client": "vue-cli-service serve",
-    "serve": "nodemon index.js && vue-cli-service serve",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
