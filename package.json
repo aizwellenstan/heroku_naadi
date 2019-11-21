@@ -1,0 +1,48 @@
+{
+  "name": "serverandclient",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start-server& npm run start-client&",
+    "start-server": "node index.js",
+    "start-client": "vue-cli-service serve",
+    "serve": "nodemon index.js && vue-cli-service serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-history-api-fallback": "^1.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^5.0.0-alpha.7",
+    "serve-static": "^1.14.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
